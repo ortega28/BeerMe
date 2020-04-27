@@ -38,9 +38,6 @@ https://www.brewerydb.com/developers/apps
 
 Url : https://sandbox-api.brewerydb.com/v2/
 
-key : 9b376004b2bce193f7d31cbdd0fbcdfa
-
-API call: https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa
 
 # MVP
 My goal for MVP is to have a functioning react app. The minimum functionality includes succesfully calling from the api, rendering data based on what the user clicks on, and styling to make the site more attractive. The app needs to be able to show the details of the images rendered.
