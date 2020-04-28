@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import axios from "axios"
 import './App.css';
 import Header from './Header.js'
@@ -15,15 +15,23 @@ class App extends Component {
     }
   }
 
-  // async componentDidMount() {
-  //   console.log("componentDidMount");
-  //   const data = await axios("https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
-  //   console.log(data)
-  //   // console.log(data.data.results[0].name)
-  //   this.setState({
-  //     beer: data
-  //   })
-  // }
+  async componentDidMount() {
+    console.log("componentDidMount");
+
+    // const data = await axios("https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
+
+    //const data = await axios("https://restcountries.eu/rest/v2/all")
+
+    //const data = await axios("https://sandbox-api.brewerydb.com/v2/beers")
+
+    const data = await axios("http://corsanywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
+
+    console.log(data.data.data[0].id)
+
+    this.setState({
+      beers: data.data.data[0]
+    })
+  }
 
 
   render() {
@@ -33,7 +41,7 @@ class App extends Component {
         <BrowserRouter>
           <Nav />
         </BrowserRouter>
-        <Home />
+        <Home beers={this.state.beers} />
         <Footer />
       </div>
     );
