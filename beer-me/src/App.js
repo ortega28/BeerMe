@@ -6,6 +6,7 @@ import Header from './Header.js'
 import Nav from './Nav.js'
 import Home from './Home.js'
 import Footer from './Footer'
+import ShowBeer from './ShowBeer';
 
 class App extends Component {
   constructor() {
@@ -17,12 +18,6 @@ class App extends Component {
 
   async componentDidMount() {
     console.log("componentDidMount");
-
-    // const data = await axios("https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
-
-    //const data = await axios("https://restcountries.eu/rest/v2/all")
-
-    //const data = await axios("https://sandbox-api.brewerydb.com/v2/beers")
 
     const data = await axios("http://corsanywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
 
@@ -43,8 +38,9 @@ class App extends Component {
         <Header />
         <BrowserRouter>
           <Nav />
+          {/* <ShowBeer /> */}
           <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
-          <p className="main-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p className="main-paragraph">This app has a list of beers for you to explore. Click on any of the images/links to view the descriptions of the beers!</p>
         </BrowserRouter>
         <Home beers={this.state.beers} />
         <Footer />

@@ -8,4 +8,9 @@
 .nav-header{
     padding-top: 15px;
     padding-bottom: 15px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
