@@ -23,7 +23,6 @@ class App extends Component {
 
     console.log(data.data.data)
     console.log(data.data.data[0])
-    //console.log(data.data.data[0].labels)
 
     this.setState({
       beers: data.data.data

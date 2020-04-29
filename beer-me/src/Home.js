@@ -12,7 +12,8 @@ const Home = ({ beers }) => {
                 <>
                     <div key={beer.name}>
                         <Link to={`/beer/${beer.name}`}>
-                            <p>Name: {beer.name} ID: {beer.id}</p>
+                            {beer.labels && <img src={beer.labels.medium} alt="" />}
+                            <p className="p-name">Name: {beer.name} ID: {beer.id}</p>
                         </Link>
                     </div>
                 </>

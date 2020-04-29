@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-
+import "./ShowBeer.css"
 
 class ShowBeer extends Component {
     constructor() {
         super();
         this.state = {
-            beer: {}
+            beer: null
         };
     }
 
@@ -24,14 +24,14 @@ class ShowBeer extends Component {
         const { beer } = this.state;
         return beer ?
             <>
-                <div>
+                <div className="show-beer">
                     <div>
-                        {/* <img src={beer.label} alt="" /> */}
+                        {beer.labels && <img src={beer.labels.medium} alt="" />}
                     </div>
-                    <div>
+
+                    <div >
                         <h1>{beer.name}</h1>
                         <p>{beer.style.description}</p>
-                        {/* <p className="description">{beer.description}</p> */}
                     </div>
 
                 </div>
