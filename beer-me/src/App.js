@@ -39,12 +39,11 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Nav />
-            <Route path="/beer/:name">
-              <ShowBeer beers={this.state.beers} />
-            </Route>
-            <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
-            <p className="main-paragraph">This app has a list of beers for you to explore. Click on any of the images/links to view the descriptions of the beers!</p>
 
+
+            {/* <Route path="/beer/:name">
+              <ShowBeer beers={this.state.beers} />
+            </Route> */}
           </Switch>
         </BrowserRouter>
         <Home beers={this.state.beers} />
