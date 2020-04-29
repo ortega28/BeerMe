@@ -13,9 +13,9 @@ const Home = ({ beers }) => {
             {beers.map((beer) => (
                 <>
                     <div key={beer.name}>
-                        {/* <Link to={`/beer/${beer.name}`}> */}
-                        <p>Name: {beer.name} ID: {beer.id}</p>
-                        {/* </Link> */}
+                        <Link to={`/beer/${beer.name}`}>
+                            <p>Name: {beer.name} ID: {beer.id}</p>
+                        </Link>
                     </div>
                 </>
             ))}

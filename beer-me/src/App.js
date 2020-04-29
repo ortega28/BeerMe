@@ -41,9 +41,9 @@ class App extends Component {
             <Nav />
 
 
-            {/* <Route path="/beer/:name">
+            <Route path="/beer/:name">
               <ShowBeer beers={this.state.beers} />
-            </Route> */}
+            </Route>
           </Switch>
         </BrowserRouter>
         <Home beers={this.state.beers} />
