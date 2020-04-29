@@ -1,4 +1,10 @@
 .show-beer {
     display:flex;
     padding-top: 150px;
+    
 }   
+
+.image{
+    margin-right: 40px;
+    margin-left: 40px;
+}

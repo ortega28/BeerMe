@@ -26,7 +26,7 @@ class ShowBeer extends Component {
             <>
                 <div className="show-beer">
                     <div>
-                        {beer.labels && <img src={beer.labels.medium} alt="" />}
+                        {beer.labels && <img src={beer.labels.medium} alt="" className="image" />}
                     </div>
 
                     <div >

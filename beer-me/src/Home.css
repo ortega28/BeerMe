@@ -1,4 +1,9 @@
-.p-name{
+.link{
     text-decoration: none;
-    
+    color: black;
+}
+
+.home-beers{
+    display: flex;
+    width: 900px;
 }

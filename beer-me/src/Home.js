@@ -7,13 +7,13 @@ import './Home.css'
 const Home = ({ beers }) => {
     console.log({ beers })
     return (
-        <div>
+        <div className="home-beers">
             {beers.map((beer) => (
                 <>
-                    <div key={beer.name}>
-                        <Link to={`/beer/${beer.name}`}>
+                    <div key={beer.name} >
+                        <Link to={`/beer/${beer.name}`} className="link">
                             {beer.labels && <img src={beer.labels.medium} alt="" />}
-                            <p className="p-name">Name: {beer.name} ID: {beer.id}</p>
+                            <p >Name: {beer.name} ID: {beer.id}</p>
                         </Link>
                     </div>
                 </>
