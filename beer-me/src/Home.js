@@ -15,15 +15,31 @@ import './Home.css'
 const Home = ({ beers }) => {
     console.log({ beers })
     return (
-        <>
-            <div>
-                <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
-                <p className="main-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                <p>Name: {beers.name} ID: {beers.id}</p>
-            </div>
-        </>
+        <div>
+            {beers.map((beer) => (
+                <>
+                    <div>
+                        {/* <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
+                        <p className="main-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+                        <p>Name: {beer.name} ID: {beer.id}</p>
+                    </div>
+                </>
+            ))}
+        </div>
     )
+    // return (
+    //     <>
+    //         {/* <div> */}
+    //         {/* <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
+    //             <p className="main-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+    //         <p>Name: {beers.name}</p>
+    //         <p>ID: {beers.id}</p>
+    //         <p>abv: {beers.abv}</p>
+
+
+    //         {/* </div> */}
+    //     </>
+    // )
     // return (
     //     <>
     //         {beers.map(beer => {

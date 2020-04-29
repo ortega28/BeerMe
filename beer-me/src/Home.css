@@ -1,4 +1,7 @@
 .main-image {
+    min-width: 700px;
+    min-height: 500px;
+
     height: 500px;
     width: 700px;
     display: block;
@@ -6,6 +9,7 @@
     margin-right: auto;
     width: 50%;
     border-radius: 30px;
+    
 }
 
 .main-paragraph{
