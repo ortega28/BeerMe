@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import axios from "axios"
 import './App.css';
 import Header from './Header.js'
@@ -37,10 +37,15 @@ class App extends Component {
       <div className="App">
         <Header />
         <BrowserRouter>
-          <Nav />
-          {/* <ShowBeer /> */}
-          <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
-          <p className="main-paragraph">This app has a list of beers for you to explore. Click on any of the images/links to view the descriptions of the beers!</p>
+          <Switch>
+            <Nav />
+            <Route path="/beer/:name">
+              <ShowBeer beers={this.state.beers} />
+            </Route>
+            <img src="https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Beer" className="main-image" />
+            <p className="main-paragraph">This app has a list of beers for you to explore. Click on any of the images/links to view the descriptions of the beers!</p>
+
+          </Switch>
         </BrowserRouter>
         <Home beers={this.state.beers} />
         <Footer />

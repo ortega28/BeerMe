@@ -1,5 +1,5 @@
 import React from "react"
-//import from "react-router-dom"
+import { Link } from "react-router-dom"
 import './Home.css'
 
 
@@ -10,9 +10,10 @@ const Home = ({ beers }) => {
         <div>
             {beers.map((beer) => (
                 <>
-                    <div>
-                        <p>Name: {beer.name} ID: {beer.id}</p>
-
+                    <div key={beer.name}>
+                        <Link to={`/beer/${beer.name}`}>
+                            <p>Name: {beer.name} ID: {beer.id}</p>
+                        </Link>
                     </div>
                 </>
             ))}
