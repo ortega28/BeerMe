@@ -30,7 +30,7 @@ class ShowBeer extends Component {
                     </div>
                     <div>
                         <h1>{beer.name}</h1>
-
+                        <p>{beer.style.description}</p>
                         {/* <p className="description">{beer.description}</p> */}
                     </div>
 
