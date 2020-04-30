@@ -19,7 +19,8 @@ class App extends Component {
   async componentDidMount() {
     console.log("componentDidMount");
 
-    const data = await axios("https://sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
+
+    const data = await axios("https://corsanywhere.herokuapp.com/sandbox-api.brewerydb.com/v2/beers/?key=9b376004b2bce193f7d31cbdd0fbcdfa")
 
     console.log(data.data.data)
     console.log(data.data.data[0])
