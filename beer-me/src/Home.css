@@ -1,9 +1,12 @@
 .link{
     text-decoration: none;
     color: black;
+    padding-left: 30px;
 }
 
 .home-beers{
     display: flex;
-    width: 900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }

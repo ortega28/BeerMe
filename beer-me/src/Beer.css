@@ -1,0 +1,21 @@
+.beer-emoji{
+    height: 300px;
+    width: 300px;
+    /* background-color: black; */
+    max-height: 250px;
+    max-width: 250px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.beer-image{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.beer-name{
+    max-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
