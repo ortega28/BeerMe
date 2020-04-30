@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
     return (
         <footer className="footer">
-            <h1> </h1>
+            <h2>Brewerydb.com</h2>
         </footer>
     )
 }
