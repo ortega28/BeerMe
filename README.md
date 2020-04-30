@@ -31,7 +31,18 @@ https://imgur.com/a/xb51nMN
 imageAlt
 
 # Component Heirarchy
-src |components/ | App.js |_ Header.js |Title | Nav.js |_ Home.js (class) |_HomeImage |_HomeParagraph |_BeerIcon |BeerName | ShowBeer.js (functional) |_BeerImage (prop) |Description (prop) | Footer.js
+src |
+    components/ 
+    | App.js |
+    |_ Header.js |Title 
+    |_ Nav.js 
+    |_ Home.js (class) 
+        |_HomeImage 
+        |_HomeParagraph 
+        |_BeerIcon 
+        |BeerName 
+    |_ ShowBeer.js (functional) |_BeerImage (prop) |Description (prop) 
+    |_ Footer.js
 
 # API
 https://www.brewerydb.com/developers/apps
