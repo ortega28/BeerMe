@@ -2,7 +2,10 @@
     padding-left: 40px;
     text-decoration: none;
     font-size: large;
-    
+}
+.nav-home:hover{
+    color:red;
+    text-decoration: underline;
 }
 
 .nav-header{
@@ -14,3 +17,10 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 620px) {
+    .nav-header{
+        min-width: 620px;
+    }
+  
+    }

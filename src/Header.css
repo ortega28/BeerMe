@@ -6,3 +6,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+@media only screen and (max-width: 620px) {
+    .header-home{
+        min-width: 620px;
+    }
+  
+    }

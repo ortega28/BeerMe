@@ -11,6 +11,15 @@
 .beer-image{
     padding-right: 50px;
     padding-left: 50px;
+    padding-top: 50;
+}
+
+.beer-image:hover {
+    border: 2px solid black;
+}
+
+.beer-emoji:hover {
+    border: 2px solid black;
 }
 
 .beer-name{
