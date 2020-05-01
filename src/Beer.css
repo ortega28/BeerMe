@@ -1,5 +1,5 @@
 .beer-emoji{
-    height: 300px;
+    height: 314px;
     width: 300px;
     /* background-color: black; */
     max-height: 250px;
@@ -11,21 +11,20 @@
 .beer-image{
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 50;
+    margin-top: 17px;
 }
 
 .beer-image:hover {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .beer-emoji:hover {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .beer-name{
     /* max-width: 200px; */
     text-align: center;
-    text-decoration: none;
     color: black;
     text-decoration: none;
 }
